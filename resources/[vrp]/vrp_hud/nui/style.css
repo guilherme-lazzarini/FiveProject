@@ -1,0 +1,246 @@
+html {
+	overflow-x: hidden !important;
+	overflow-y: hidden !important;
+	background-color: transparent !important;
+}
+
+body {
+	font-size: 12px;
+	font-family: Arial,Helvetica,sans-serif;
+	background-color: transparent !important;
+}
+
+#hudDisplay {
+	right: 40px;
+	bottom: 50px;
+	position: absolute !important;
+}
+
+#imgserver {
+	margin-top: 50px;
+	float: right;
+	margin-right: 0px;
+	width: 180px;
+/* 	margin: 0 auto 0 auto; */
+}
+#imgserver img {max-width: 75%;opacity: 0.8;}
+
+
+
+.hudDisplayText {
+	font-weight: 700;
+	padding: 6px 9px;
+	color: rgb(0, 0, 0);
+	position: absolute !important;
+/* 	text-shadow: 1px 1px rgba(0, 0, 0, 0.8); */
+	text-align: center;
+}
+
+
+
+
+ .infosBack {
+	float: top;
+	right: 10px;
+	bottom: 35px;
+	margin-bottom: 10px;
+	text-align: right;
+	color: rgba(255,255,255,0.3);
+/* 	text-shadow: 1px 1px rgba(0,0,0,0.8); */
+} 
+
+.infosBack b {
+	color: rgb(255, 255, 255);
+	margin-bottom: 10px;
+}
+
+
+
+.radioBack { 
+    float:center;
+    position:absolute;
+	margin-left:-40px;  
+	margin-top:+25px; 
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: normal;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+#radio { 
+	position: fixed;
+	margin: 0 auto;
+	bottom: 50%;
+	right: 50%;
+}
+
+#displayRadio.over-radio {
+	bottom: 5px !important;
+}
+
+.healthBack {
+	float: top;
+	width: 200px;
+	border-radius: 3px 1px 2px ;
+	height: 26px;
+	background: rgba(0, 0, 0, 0.4);
+	margin-bottom: 5px;
+	border-radius: 3px;
+}
+
+.healthDisplay {
+	float: top;
+	height: 26px;
+/* 	background: linear-gradient(90deg, rgb(200, 0, 0) 50%, rgb(0, 0, 0) 100%); */
+	background: rgba(180, 0, 0, 1);
+	border-radius: 3px;
+}
+
+
+
+
+/* .staminaDisplay {
+	float: left;
+	height: 26px;
+	background: linear-gradient(45deg, rgb(219, 0, 0) 0%, rgb(0, 0, 0) 100%);
+	border-radius: 3px;
+} */
+
+.clockDisplayText {
+/* 	font-family: Arial, Helvetica, sans-serif; */
+	font-weight: bolder;
+	padding: 6px 30px;
+	color: rgba(0, 0, 0, 0.8);
+	position: absolute !important;
+/* 	text-shadow: 1px 1px rgba(0, 0, 0, 0.8); */
+	text-align: center;
+/* 	font-style: oblique; */
+
+}
+
+.microBack {
+	float: right;
+	width: 35px;
+	height: 26px;
+	border-radius: 3px;
+	background:rgb(180, 0, 0); 
+	top: 50%;
+	left: 50%;
+}
+
+.microDisplayText {
+	/* 	font-family: Arial, Helvetica, sans-serif; */
+		font-weight: bolder;
+		padding: 6px 13px;
+		color: rgba(0, 0, 0, 1);
+		position: absolute !important;
+	/* 	text-shadow: 1px 1px rgba(0, 0, 0, 0.8); */
+		text-align: center;
+	/* 	font-style: oblique; */
+	
+	}
+
+	.voiceDisplay1 {
+		float: right;
+		width: 35px;
+		height: 26px;
+		border-radius: 3px;
+	}
+	
+	.voiceDisplay2 {
+		float: right;
+		width: 35px;
+		height: 26px;
+		border-radius: 3px;
+	}
+	
+	.voiceDisplay3 {
+		float: right;
+		width: 35px;
+		height: 26px;
+		border-radius: 3px;
+	}
+
+.clockBack {
+	float: left;
+	width: 160px;
+	height: 26px;
+	background: rgba(180, 0, 0, 1);
+/* 	background: linear-gradient(90deg, rgb(200, 0, 0) 50%, rgb(0, 0, 0) 100%); */
+	border-radius: 3px;
+}
+
+.clockImage {
+	background: url("https://media.discordapp.net/attachments/868186574876188713/871963013811437618/dd.png?width=16&height=16") left no-repeat;
+	margin-left: 7px;
+	margin-top: 5px;
+	width: 16px;
+	height: 16px;
+/* 	text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);  */
+}
+
+
+.armourDisplay {
+	float: left;
+	height: 26px;
+	background: rgb(0, 100, 255);
+	border-radius: 3px;
+	transition: all 0.10s;
+}
+
+.armourBack {
+	float: left;
+	width: 36px;
+	height: 26px;
+	background: rgba(255, 255, 255, 0);
+	border-radius: 3px;
+	margin-left: 5px;
+}
+
+#movieTop {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 13%;
+	background: #000;
+	position: absolute;
+	display: none;
+}
+
+#movieBottom {
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 13%;
+	background: #000;
+	position: absolute;
+	display: none;
+}
+
+#carDisplay {
+	right: 10px;
+	bottom: 60px;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: right;
+	color: rgba(255,255,255,0.6);
+	position: absolute !important;
+	text-shadow: 1px 1px rgba(0,0,0,1);
+}
+
+#carDisplay b {
+	font-size: 11px;
+	font-weight: 300;
+	letter-spacing: 3px;
+	padding-right: 5px;
+	color: rgba(255,255,255,0.3);
+}
+
+#carDisplay s {
+	font-size: 11px;
+	font-weight: 300;
+	letter-spacing: 3px;
+	padding-right: 5px;
+	color: rgba(134,208,73,0.6);
+	text-decoration: none;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      @keyframes spinner {
+      0% {
+      transform: translate3d(-50%, -50%, 0) rotate(0deg);
+      }
+      100% {
+      transform: translate3d(-50%, -50%, 0) rotate(360deg);
+      }
+      }
+      .spin::before {
+      animation: 1.5s linear infinite spinner;
+      animation-play-state: inherit;
+      border: solid 2px rgba(255, 255, 255);
+      border-bottom: solid 2px rgb(0, 0, 0);
+      border-radius: 50%;
+      content: "";
+      height: 60px;
+      width: 60px;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 2px);
+      -webkit-box-shadow: 2px 1px 2px #000000;
+	-moz-box-shadow: 2px 1px 2px #000000;
+	box-shadow: 2px 1px 2px #000000;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+
+	-webkit-transition: box-shadow .4s ease;
+	-moz-transition: box-shadow .4s ease;
+	-o-transition: box-shadow .4s ease;
+	-ms-transition: box-shadow .4s ease;
+	transition: box-shadow .4s ease;
+      will-change: transform;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="spin"></div>
+  </body>
+</html>
+
+</head>
+<body>
+<!-- partial -->
+
+<!-- partial:index.partial.html -->
+<!-- PARTICLE SYSTEM -->
+<div class="page-bg"></div>
+
+<div class="animation-wrapper">
+  <div class="particle particle-1"></div>
+  <div class="particle particle-2"></div>
+  <div class="particle particle-3"></div>
+  <div class="particle particle-4"></div>
+</div>
+
+<div class="cell">
+  <div class="wrapper">
+    <div class="spinner spinner3"></div>
+  </div>
+</div>
+
+
+<audio id="leson" src="music.mp3" autoplay="true" hidden="true" loop="true"/>
+<script>
+
+var play = false;
+var myAudio = document.getElementById("leson");
+
+myAudio.volume = 0; /* volume */
+
+function onKeyDown(event) {
+        switch (event.keyCode) {
+            case 32: //SpaceBar                    
+                if (play) {
+                    myAudio.pause();
+                    play = false;
+                } else {
+                    myAudio.play();
+                    play = true;
+                }
+                break;
+        }
+  return false;
+}
+
+window.addEventListener("keydown", onKeyDown, false);
+</script>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./script.js"></script>
+
+
+

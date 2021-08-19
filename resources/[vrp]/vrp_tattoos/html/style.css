@@ -1,0 +1,208 @@
+::-webkit-scrollbar { display: none; }
+
+body {
+	margin: 0px;
+	font-family: "Arial";
+	letter-spacing: 1px;
+	font-size: 12px;
+	color: #ffffff;  /* letras */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.logo {
+    padding-left: 28%;
+}
+
+#tattoo-container {
+	position: fixed;
+	top: 15%;
+	height: 100%;
+	max-height: 70%;
+	width: 400px;
+	left: -440px;
+	background: linear-gradient(to right, #000000c7, #2e2e2eb0);
+	border-top: solid 3px #870000;
+	border-bottom: solid 3px #870000;
+	padding: 15px 5px 15px 15px;
+	transition: all .2s ease-out;
+	opacity: .5;
+}
+
+#tattoo-container.open {
+	opacity: 1;
+	transform: translateX(440px);
+}
+
+#items {
+	position: absolute;
+	width: calc(100%);
+	height: calc(100% - 400px);
+	overflow-y: scroll;
+}
+
+.column {
+	width: 10%;
+}
+
+.title-area {
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+	font-size: 14px;
+/* 	font-weight: bold; */
+	text-transform: uppercase;
+/* 	opacity: .7; */
+}
+
+.hotkey {
+	margin-right: 16px;
+}
+
+.hotkey:last-child {
+	margin-right: 0px;
+}
+
+.hotkey span {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+
+#reset {
+	text-align: center;
+	padding: 10px 0px;
+	margin-top: 15px;
+	margin-left: 25%;
+	background: #000000;
+	width: 169px;
+	cursor: pointer;
+	border-radius: 2px;
+/* 	border: 1px solid rgba(255, 255, 255, 0.61); */
+	text-transform: uppercase;
+	font-size: 11px;
+/* 	font-weight: bold; */
+	transition: all .1s ease-out;
+}
+
+#reset:hover {
+	background: #870000;
+}
+
+.categories {
+	overflow: auto;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
+
+.category {
+	width: 50px;
+	height: 50px;
+	background: #000000;
+	border: 1px solid rgba(255, 255, 255, 0.61);
+	border-radius: 50px;
+	cursor: pointer;
+	float: left;
+	transition: all .1s ease-out;
+}
+
+.category:hover {
+	background: #ff0059;
+}
+
+.category:first-child {
+	margin: 0px 13px 13px 0px;
+	background: url(images/head.png) no-repeat center/30px 30px,rgba(0,0,0,0.35);
+}
+
+.category:first-child:hover, .category:first-child.selected {
+	background: url(images/head.png) no-repeat center/30px 30px,#870000;
+}
+
+.category:nth-child(2) {
+	margin: 0px 13px 13px 0px;
+	background: url(images/arm-left.png) no-repeat center/30px 30px,rgba(0,0,0,0.35);
+}
+
+.category:nth-child(2):hover, .category:nth-child(2).selected {
+	background: url(images/arm-left.png) no-repeat center/30px 30px,#870000;
+}
+
+.category:nth-child(3) {
+	margin: 0px 13px 13px 0px;
+	background: url(images/arm-right.png) no-repeat center/30px 30px,rgba(0,0,0,0.35);
+}
+
+.category:nth-child(3):hover, .category:nth-child(3).selected {
+	background: url(images/arm-right.png) no-repeat center/30px 30px,#870000;
+}
+
+.category:nth-child(4) {
+	margin: 0px 13px 13px 0px;
+	background: url(images/chest.png) no-repeat center/30px 30px,rgba(0,0,0,0.35);
+}
+
+.category:nth-child(4):hover, .category:nth-child(4).selected {
+	background: url(images/chest.png) no-repeat center/30px 30px,#870000;
+}
+
+.category:nth-child(5) {
+	margin: 0px 13px 13px 0px;
+	background: url(images/leg-left.png) no-repeat center/30px 30px,rgba(0,0,0,0.35);
+}
+
+.category:nth-child(5):hover, .category:nth-child(5).selected {
+	background: url(images/leg-left.png) no-repeat center/30px 30px,#870000;
+}
+
+.category:nth-child(6) {
+	margin: 0px 13px 13px 0px;
+	background: url(images/leg-right.png) no-repeat center/30px 30px,rgba(0,0,0,0.35);
+}
+
+.category:nth-child(6):hover, .category:nth-child(6).selected {
+	background: url(images/leg-right.png) no-repeat center/30px 30px,#870000;
+}
+
+.category:nth-child(7) {
+	margin: 0px 13px 13px 0px;
+	background: url(images/head.png) no-repeat center/30px 30px,rgba(0,0,0,0.35);
+}
+
+.category:nth-child(7):hover, .category:nth-child(7).selected {
+	background: url(images/head.png) no-repeat center/30px 30px,#870000;
+}
+.category-items {
+	float: left;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.item {
+	width: 50px;
+	height: 50px;
+	color: #000000;
+	background: #ffffff;
+	border-radius: 4px;
+	cursor: pointer;
+	float: left;
+	line-height: 50px;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 0px 13px 13px 0px;
+	transition: all .1s ease-out;
+}
+
+.item:hover, .item.selected {
+	color: #ffffff;
+	background: #000000;
+}
